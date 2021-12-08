@@ -235,7 +235,7 @@ namespace Acme.Biz.Tests
         {
             //arrange
             var currentProduct = new Product();
-            var expected = "Tools-1";
+            var expected = "Tools-0001";
 
             //act
             var actual = currentProduct.ProductCode;

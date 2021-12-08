@@ -76,7 +76,9 @@ namespace Acme.Biz
         public DateTime? AvailabilityDate { get; set; }
         public string ValidationMessage { get; private set; }
 
-        public string ProductCode => this.Category + "-" + this.SequenceNumber;
+        //public string ProductCode => this.Category + "-" + this.SequenceNumber;
+        //public string ProductCode => String.Format("{0}-{1:0000}", this.Category, this.SequenceNumber);
+        public string ProductCode => $"{this.Category}-{this.SequenceNumber:0000}";
 
         public decimal Cost { get; set; }
 
